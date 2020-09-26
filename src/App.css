@@ -1,0 +1,110 @@
+body{  background-color: rgb(255, 236, 162); }
+
+
+
+.App {
+  text-align: center;
+  font-family:Cooper;
+  font-size: 20px;
+}
+
+.editButton{font-weight: 300; color: rgba(1, 1, 54, 0.452); text-decoration: underline rgba(1, 1, 54, 0.452);}
+
+.taskTextEdit{  font-size: 16px;
+  color: black;}
+
+.radioCssEdit{  
+  -webkit-text-stroke: 1.3px black;
+  font-size: 18px;
+}
+
+button{  
+  font-family:Cooper;
+   font-size: 24px;
+    border-radius: 20px;
+    -webkit-text-stroke: 1.4px black;
+    color: rgb(170, 94, 66);
+    background-color: cornsilk;
+     padding: 10px;
+}
+
+
+
+.radioCss{
+  -webkit-text-stroke: 1.4px black;
+  font-size: 20px;
+}
+
+.taskText{
+  font-size: 22px;
+  -webkit-text-stroke: 1.4px black;
+  color: rgb(224, 97, 51);
+}
+
+#signi{  
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.tasks{
+  border:solid black ;
+  padding: 30px;
+   margin: 5px;display: inline-block;
+  }
+
+
+h1{-webkit-text-stroke: 2.5px black;
+  color:cornsilk;
+  font-family: Cooper;
+  font-size: 44px;
+   text-shadow: -6px -2px rgba(80, 31, 31, 0.5);
+   text-decoration: underline dotted rgb(177, 164, 113);
+    margin-bottom: 80px;
+  }
+
+h2{font-size: 24px;}
+
+
+
+
+
+
+
+
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
