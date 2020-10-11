@@ -9,11 +9,26 @@ export default function Schedule(props) {
     const [tasks,setTasks]=useState([])
     const [significance,setSignificance]=useState('')
     const [showEditDiv,setShowEditDiv]=useState(false)
-
+    
+    
+    const GetSortOrder=(prop)=> {    
+    return function(a, b) {    
+        if (a[prop] > b[prop]) {    
+            return 1;    
+        } else if (a[prop] < b[prop]) {    
+            return -1;    
+        }    
+        return 0;    
+    }  
+    useEffect(() => {
+        const copy = tasks;
+        copy.sort(GetSortOrder("deadLine"));
+        setTasks(copy);
+    },[tasks.length]) 
+    
 
     let addTask = (n,dl,s,i) =>{
         setTasks([...tasks,{taskName:n,deadLine:dl,significance:s,id:i}])
-
     }
 
     let clear = (i)=>{
